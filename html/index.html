@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>르 파빌리온 풀빌라</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pavilion.css">
+    <!-- 반응형 스케일링 CSS 추가 -->
+    <link rel="stylesheet" href="../css/responsive-scale.css">
+    <style>
+      @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,100&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+    </style>
+</head>
+<body style="cursor:auto;">
+    <!--헤더: 항상 상단 고정-->
+  <header class="hd">
+      <div class="hd-top-contents">
+          <div class="inner-con">
+              <button class="menu-btn open-btn">
+                  <div class="menu-ico">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                  </div>
+                  <h5>MENU</h5>
+              </button>
+              <a href="index.html" class="logo">
+                <img src="../images/logo.png" alt="르 파빌리온 풀빌라 로고">
+              </a>
+              <a href="https://booking.ddnayo.com/booking-calendar-status?accommodationId=100561" class="booking_btn hd-booking" target="_blank">BOOKING</a>
+          </div>
+      </div>
+  </header>
+  <!-- 메뉴바: 슬라이드로 등장, 헤더와 별도 -->
+  <div class="hd-menu-wrap">
+    <div class="menubar-top">
+      <button class="menu-btn close-btn">
+        <div class="menu-ico">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </button>
+    </div>
+    <div class="menu-flex">
+      <div class="menu-col">
+        <div class="menu-title">PROLOGUE</div>
+        <div class="menu-sub"><a href="view.html">풍경</a></div>
+      </div>
+      <div class="menu-col">
+        <div class="menu-title">ROOMS</div>
+        <div class="menu-sub"><a href="room1.html">씨엘(CIEL)</a></div>
+        <div class="menu-sub"><a href="room2.html">루카(LUCA)</a></div>
+        <div class="menu-sub"><a href="room3.html">로제(ROSE)</a></div>
+        <div class="menu-sub"><a href="room4.html">루나(LUNA)</a></div>
+        <div class="menu-sub"><a href="room5.html">포레(FORE)</a></div>
+      </div>
+      <div class="menu-col">
+        <div class="menu-title">SPECIAL</div>
+        <div class="menu-sub"><a href="special1.html">Unique space</a></div>
+        <div class="menu-sub"><a href="special2.html">Small party</a></div>
+        <div class="menu-sub"><a href="special3.html">Premium Services</a></div>
+        <div class="menu-sub"><a href="special4.html">Outdoor pool</a></div>
+        <div class="menu-sub"><a href="special5.html">BBQ</a></div>
+        <div class="menu-sub"><a href="special6.html">Private pool</a></div>
+      </div>
+      <div class="menu-col">
+        <div class="menu-title">TRAVEL</div>
+        <div class="menu-title">LOCATION</div>
+        <div class="menu-title">RESERVATION</div>
+        <div class="menu-sub"><a href="reser.html">예약안내</a></div>
+        <div class="menu-sub"><a href="https://booking.ddnayo.com/booking-calendar-status?accommodationId=100561" target="_blank">실시간예약</a></div>
+        <div class="menu-sub"><a href="https://booking.naver.com/booking/3/bizes/990302" target="_blank">네이버예약</a></div>
+        <div class="menu-sub"><a href="notice.html">공지사항</a></div>
+      </div>
+    </div>
+    <div class="menu-sns">
+      <a href="https://www.instagram.com/pavilion_moment/?igshid=YTQwZjQ0NmI0OA%3D%3D" class="insta_btn" target="_blank">instagram</a>
+      <a href="https://search.naver.com/search.naver?where=post&sm=tab_pge&query=르파빌리온풀빌라" class="blog_btn" target="_blank">blog</a>
+      <a href="https://booking.ddnayo.com/booking-calendar-status?accommodationId=100561" class="reser_btn" target="_blank">reservation</a>
+    </div>
+    <div class="menu-img">
+      <img src="../images/menu-img1.jpg" alt="르 파빌리온 풀빌라 메뉴 이미지">  
+    </div>
+  </div>
+  <!--배너 사진 및 슬라이드 & 클릭 시 다음 페이지-->
+  <div class="banner">
+      <div class="banner-img">
+          <img src="../images/banner-img1.png" alt="르 파빌리온 풀빌라 배너 이미지">
+          <button class="prev-btn">〈 </button>
+          <button class="next-btn"> 〉</button>
+      </div>
+  </div>
+  <section>
+      <div class="back">
+        <div class="Resort-Facilities">
+          <h2 class="left-text">Resort</h2>
+          <h2 class="right-text">Facilities</h2>
+          <img class="slide-left-img" src="../images/Resort-left-img1.jpg" alt="리조트 왼쪽 이미지" id="slide-left">
+          <div class="slide-text active">
+            <h5>Unique Space</h5>
+            <p>계절마다 변하는 자연의 색채와 함께<br>
+              예술로 물들어진 이곳에서<br>
+              몸과 마음이 쉬어갑니다.</p>
+          </div>
+          <div class="slide-text">
+            <h5>Outdoor BBQ</h5>
+            <p>별빛과 바람이 머무는 공간에서<br>
+              함께 즐기는 특별한 바비큐 순간,<br>
+              추억이 머물다 갑니다.</p>
+          </div>
+          <div class="slide-text">
+            <h5>Garden & Sandbox</h5>
+            <p>푸른 정원 속 웃음이 피어나고<br>
+              모래 위에 쌓아올린 추억이<br>
+              가족의 시간을 더합니다.</p>
+          </div>
+          <div class="slide-text">
+            <h5>Kids playroom</h5>
+            <p>아이들의 상상이 자라는 곳,<br>
+              장난감과 웃음이 가득한<br>
+              작은 세상이 펼쳐집니다.</p>
+          </div>
+          <div class="slide-text">
+            <h5>Cafeterior</h5>
+            <p>햇살 머무는 자리에서 <br> 
+              향기로운 커피와 여유를 <br> 
+              편안히 즐길 수 있습니다.</p>
+          </div>
+          <div class="slide-text">
+            <h5>Amenity & Bedding</h5>
+            <p>포근한 침구와 세심한 배려,<br>
+              편안한 휴식 속에서<br>
+              하루가 고요히 물듭니다.</p>
+          </div>
+          <div class="slide-text">
+            <h5>Pool & Spa</h5>
+            <p>푸른 물결과 따스한 스파,<br>
+              자연 속 여유를 품으며<br>
+              몸과 마음이 쉬어갑니다.</p>
+          </div>
+          <div class="slide-text">
+            <h5>Breakfast</h5>
+            <p>햇살 가득한 아침 식탁,<br>
+              신선한 맛과 따뜻한 여유가<br>
+              하루의 시작을 열어줍니다.</p>
+          </div>
+          <p class="more">more</p>
+          <img class="slide-right-img" src="../images/Resort-right-img1.jpg" alt="리조트 오른쪽 이미지" id="slide-right">
+          <div class="page-of-special">
+            <span class="page-number">1</span>
+            <hr>
+            <span>8 OF SPECIAL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="le-pavilion-services">
+        <h2>Le Pavilion Services</h2>
+        <div class="services">
+          <div class="service-item">
+            <img src="../images/pool-icon.png" alt="수영장 아이콘">
+            <p>전용 수영장 이용</p>
+          </div>
+          <div class="service-item">
+            <img src="../images/spa-icon.png" alt="스파 아이콘">
+            <p>객실 내 스파 또는 목조</p>
+          </div>
+          <div class="service-item">
+            <img src="../images/roomservice-icon.png" alt="룸서비스 아이콘">
+            <p>24시간 룸서비스</p>
+          </div>
+          <div class="service-item">
+            <img src="../images/delivery-icon.png" alt="배달 아이콘">
+            <p>맞춤형 배달 서비스</p>
+          </div>
+          <div class="service-item">
+            <img src="../images/breakfast-icon.png" alt="조식 아이콘">
+            <p>조식 제공 또는 케이터링 서비스</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-view-section">
+        <div class="room-left">
+          <h2>ROOM VIEW</h2>
+          <p>
+            드넓은 바다와 경계를 허무는 프라이빗 풀,<br>
+            당신을 위한 완벽한 휴식과 럭셔리한 공간까지.<br><br>
+            일상의 품격을 한 단계 높이는 곳,<br>
+            르 파빌리온에서 여유와 진정한 프리미엄을 경험하세요.
+          </p>
+          <img src="../images/Resort-img2.jpg" alt="room-view-left-image">
+        </div>
+        <div class="room-right">
+          <div class="room-slider">
+            <div class="room-card active">
+              <img src="../images/CIEL.jpg" alt="CIEL 이미지">
+              <div class="room-info">
+                <h3>101 Infinity Suite A</h3>
+                <p>프라이빗한 오션뷰와 힐링 공간</p>
+              </div>
+            </div>
+
+            <div class="room-card next">
+              <img src="../images/LUCA.jpg" alt="LUCA 이미지">
+              <div class="room-info">
+                <h3>102 Infinity Suite B</h3>
+                <p>모던한 인테리어와 여유로운 공간</p>
+              </div>
+            </div>
+
+            <div class="room-card below">
+              <img src="../images/ROSE.jpg" alt="ROSE 이미지">
+              <div class="room-info">
+                <h3>103 Infinity Suite C</h3>
+                <p>가족과 함께하는 따뜻한 휴식</p>
+              </div>
+            </div>
+
+            <div class="room-card hidden">
+              <img src="../images/LUNA.jpg" alt="LUNA 이미지">
+              <div class="room-info">
+                <h3>104 Infinity Suite D</h3>
+                <p>자연과 어우러진 감성 공간</p>
+              </div>
+            </div>
+
+            <div class="room-card hidden">
+              <img src="../images/FORE.jpg" alt="FORE 이미지">
+              <div class="room-info">
+                <h3>105 Infinity Suite E</h3>
+                <p>럭셔리한 인테리어와 프라이버시</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top"><a href="index.html">TOP</a></div>
+       <div class="footer-menu">
+        <p class="prologue">
+          PROLOGUE
+          <a href="view.html"><span class="tooltip">풍경</span></a>
+        </p>
+        <p class="rooms">
+          ROOMS
+          <a href="room1.html"><span class="tooltip">씨엘(CIEL)</span></a>
+          <a href="room2.html"><span class="tooltip">루카(LUCA)</span></a>
+          <a href="room3.html"><span class="tooltip">로제(ROSE)</span></a>
+          <a href="room4.html"><span class="tooltip">루나(LUNA)</span></a>
+          <a href="room5.html"><span class="tooltip">포레(FORE)</span></a>
+        </p>
+        <p class="special">
+          SPECIAL
+          <a href="special1.html"><span class="tooltip">Unique space</span></a>
+          <a href="special2.html"><span class="tooltip">Small party</span></a>
+          <a href="special3.html"><span class="tooltip">Pramlum Servlces</span></a>
+          <a href="special4.html"><span class="tooltip">Outdoor pool</span></a>
+          <a href="special5.html"><span class="tooltip">BBQ</span></a>
+          <a href="special6.html"><span class="tooltip">Private pool</span></a>
+        </p>
+        <p>TRAVEL</p>
+        <p>LOCATION</p>
+        <p class="reservation">
+          RESERVATION
+          <a href="reser.html"><span class="tooltip">예약안내</span></a>
+          <a href="https://booking.ddnayo.com/booking-calendar-status?accommodationId=100561"><span class="tooltip">실시간예약</span></a>
+          <a href="https://booking.naver.com/booking/3/bizes/990302"><span class="tooltip">네이버예약</span></a>
+          <a href="notice.html"><span class="tooltip">공지사항</span></a>
+        </p>
+       </div>
+       <div class="footer-right">
+        <a href="index.html">
+          <p class="footer-tel">010 3239 3400</p>
+        </a><br>
+        <a href="index.html"><img class="footer-logo" src="../images/logo2.png" alt="logo"></a>
+        <p class="footer-right-text">
+          르 파빌리온 풀빌라<br>
+          Le Pavilion de la Moment Poolvilla
+        </p>
+        <p class="footer-right-text2">
+          주소 : 경북 포항시 북구 송라면 보경로 287<br>
+          사업자번호 : 647-10-02198 (대표 : 노현희)<br>
+          농어촌민박신고번호 : 제 16-포항-2023-0071 호
+          <img class="footer-simbol" src="../images/ico_simbol.png" alt="농어촌민박">
+        </p>
+       </div>
+       <div class="footer-bottom">
+         <hr>
+          <div class="bottom-text">
+            <span>COPYRIGHT RESERVED. PHOTO & DESIGNED</span>
+            <a href="http://www.always-design.com/"><img src="../images/copyright.png" alt="언제나 디자인">
+            <span>ㅤㅤBY 언제나,디자인</span></a>
+          </div>
+          <a class="bottom-login" href="http://www.le-pavilion-poolvilla.kr/board/bbs/login.php?url=http%3A%2F%2Fwww.le-pavilion-poolvilla.kr%2Fboard%2Fadm">관리자 로그인</a>
+       </div>
+    </footer>
+    <script src="../script/pavilion.js"></script>
+</body>
+</html>
